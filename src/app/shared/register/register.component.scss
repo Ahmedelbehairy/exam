@@ -1,0 +1,71 @@
+.container-fluid {
+    background-color: rgba(207, 206, 206, 0.275);
+}
+
+.rounded {
+    border-radius: 30px !important;
+}
+a
+{
+    font-size: 12px;
+    font-weight: 100px;
+}
+
+.bg-main {
+    background-color: rgba(207, 206, 206, 0.4);
+}
+
+.bg-danger {
+    background-color: #dc3546b4 !important;
+}
+
+.bg-danger:hover {
+    background-color: #dc3546 !important;
+}
+
+i {
+    font-size: 60px;
+}
+
+.Our:before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 80px;
+    background-color: white;
+    right:60%;
+    top: 40%;
+}
+
+.Our:after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 80px;
+    background-color: white;
+    left: 60%;
+    top: 40%;
+}
+
+@media screen and (max-width:1500px) {
+
+    .our:before {
+        content: '';
+        position: absolute;
+        height: 0px;
+        width: 80px;
+        background-color: white;
+        left: 25%;
+        top: 40%;
+    }
+
+    .our:after {
+        content: '';
+        position: absolute;
+        height: 0px;
+        width: 80px;
+        background-color: white;
+        right: 25%;
+        top: 40%;
+    }
+}
