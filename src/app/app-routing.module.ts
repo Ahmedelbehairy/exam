@@ -10,6 +10,7 @@ import { GardeGuard } from './garde.guard';
 import { UndefinedComponent } from './shared/undefined/undefined.component';
 
 const routes: Routes = [
+  { path: '', canActivate: [GardeGuard], component: HomeComponent },
   {path:'shared', component:SharedComponent, children:[
     {path:'login', component:loginComponent},
     { path: 'register',  component:RegisterComponent}
