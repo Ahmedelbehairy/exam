@@ -19,7 +19,7 @@
                     <input  ngModel #name="ngModel" class=" p-3 mb-3 w-75 border-0 rounded" id="name" type="text" name="name" placeholder="Enter Your Name"
                     required minlength="4" maxlength="15">
                     <!-- validate -->
-                    <div *ngIf="name.invalid && name.touched"
+                    <div *ngIf="name.invalid && name.dirty"
                     class="alert alert-danger rounded mt-2">
                     <p *ngIf="name.errors?.['required']">
                     The name is required</p>
@@ -33,7 +33,7 @@
                     <input ngModel #email="ngModel" class=" p-3 mb-3 w-75 border-0 rounded" type="email" name="email" placeholder="Enter Your Email"
                     required >
                     <!-- validate -->
-                    <div *ngIf="email.invalid && email.touched"
+                    <div *ngIf="email.invalid && email.dirty"
                     class="alert alert-danger rounded mt-2">
                     <p *ngIf="email.errors?.['required']">
                         The email is required</p>
@@ -47,7 +47,7 @@
                     <input ngModel #phone="ngModel" class=" p-3 mb-3 w-75 border-0 rounded" type="number" name="phone" placeholder="Enter Your Phone"
                     required pattern="^[01](0|1|2|4|5)[0-9]{6}$">
                     <!-- validate -->
-                    <div *ngIf="phone.invalid && phone.touched"
+                    <div *ngIf="phone.invalid && phone.dirty"
                         class="alert alert-danger rounded mt-2">
                         <p *ngIf="phone.errors?.['required']">
                         The Phone is required</p>
@@ -61,7 +61,7 @@
                     <input ngModel #password="ngModel" class=" p-3 mb-3 w-75 border-0 rounded" type="password" name="password" placeholder="Enter Your Password"
                     required pattern="^[A-Z]{1}([a-z]|[0-9]){4,15}$">
                     <!-- validate -->
-                    <div *ngIf="password.invalid && password.touched"
+                    <div *ngIf="password.invalid && password.dirty"
                         class="alert alert-danger rounded mt-2">
                         <p *ngIf="password.errors?.['required']">
                         The password is required</p>
