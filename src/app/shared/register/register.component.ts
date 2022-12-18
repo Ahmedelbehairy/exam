@@ -11,11 +11,8 @@ export class RegisterComponent {
   error: string = '';
 
   constructor(private _AuthService: AuthService, private _Router: Router){}
-  ngOnInit(): void {
 
-  }
-
-
+// function to check for your data from api and send it 
   onSubmit(item: any) {
     if (item.value) {
       this._AuthService.registerUserDetails(item.value).subscribe((res) => {

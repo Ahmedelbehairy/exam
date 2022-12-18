@@ -6,14 +6,16 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { loginComponent } from './shared/Login/login.component';
 import { HomeComponent } from './features/home/home.component';
+import { GardeGuard } from './garde.guard';
+import { UndefinedComponent } from './shared/undefined/undefined.component';
 
 const routes: Routes = [
-  {path:'',component:RegisterComponent},
   {path:'shared', component:SharedComponent, children:[
     {path:'login', component:loginComponent},
-    {path:'register', component:RegisterComponent}
+    { path: 'register',  component:RegisterComponent}
   ]},
-  {path:'home' ,component:HomeComponent}
+  { path: 'home',canActivate: [GardeGuard],component:HomeComponent},
+  {path:'**' ,component:UndefinedComponent}
 ];
 
 @NgModule({

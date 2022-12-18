@@ -21,11 +21,11 @@ import { AppComponent } from './app.component';
     FeaturesModule,
     CoreModule,
     MatSlideToggleModule,
-    MatIconModule
+    MatIconModule,
   ],
   exports:[
     AppComponent,
-    MatSlideToggleModule
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

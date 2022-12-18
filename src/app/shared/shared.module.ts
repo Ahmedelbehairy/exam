@@ -10,6 +10,7 @@ import { RegisterComponent } from './register/register.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { LogoutComponent } from './logout/logout.component';
+import { UndefinedComponent } from './undefined/undefined.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { LogoutComponent } from './logout/logout.component';
     loginComponent,
     RegisterComponent,
     LogoutComponent,
+    UndefinedComponent,
   ],
   imports: [
     CommonModule,
@@ -31,7 +33,8 @@ import { LogoutComponent } from './logout/logout.component';
     SharedComponent,
     loginComponent,
     RegisterComponent,
-    LogoutComponent
+    LogoutComponent,
+    UndefinedComponent
   ],
 })
 export class SharedModule {}

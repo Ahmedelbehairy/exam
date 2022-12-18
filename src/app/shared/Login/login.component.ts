@@ -11,7 +11,7 @@ import { AuthService } from '../auth.service';
 export class loginComponent {
   error:string=''
   constructor(private _AuthService: AuthService, private _Router:Router){}
-
+// function to check for your data from api to login in 
   onSubmit(item: any) {
     if (item.value) {
       this._AuthService.loginUserDetails(item.value).subscribe((res) => {

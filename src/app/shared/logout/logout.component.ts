@@ -8,7 +8,10 @@ import { AuthService } from '../auth.service';
 })
 export class LogoutComponent {
   constructor(private _AuthService: AuthService){}
+  // function to go login page
   logout(){
     this._AuthService.logOut()
   }
+
 }
+
